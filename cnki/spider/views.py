@@ -31,10 +31,11 @@ def spider():
             for r in results:
                 if r.has_attr('bgcolor'):
                     record = r.select('td')[1].find('a')
-                    print(record.text)
+
                     year = r.select('td')[4].text
-                    url = 'http://kns.cnki.net' + record.attrs['href']
+                    paper_url = 'http://kns.cnki.net' + str(record.attrs['href']).replace('kns','KCMS')
                     title = record.text
+                    print(record.text,paper_url)
         time.sleep(3)
 
 
