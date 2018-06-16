@@ -1,0 +1,24 @@
+a{
+   text-decoration: none;
+    color: #000;
+}
+a {
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+a:hover{
+   text-decoration-line: none;
+    color:#7292FF;
+}
+.nav{
+    margin-top: 30px;
+}
+.logo{
+    width: 90px;
+    height: 50px;
+}
+
+.status{
+    font-size: 100px;
+}

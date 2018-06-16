@@ -1,0 +1,12 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+<div class="nav" id="myNav">
+    <a href="#">
+        <img class="logo" src="{% static "img/logo.png" %}" alt="logo">
+    </a>
+    <a href="#">首页</a>
+    <a href="#">论文查找</a>
+    <a href="#">数据分析</a>
+    <a href="{% url 'spider' %}">在线爬虫</a>
+</div>
