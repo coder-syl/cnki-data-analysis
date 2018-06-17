@@ -13,7 +13,7 @@ def spider(request):
     a=4
     res=paperSpider.delay()
     print(a)
-    print("async task res", res.get())
+    # print("async task res", res.get())
 
-    return HttpResponse('res %s' % res.get())
-    # return render(request,'analyse/spiderStatus.html');
+    # return HttpResponse('res %s' % res.get())
+    return render(request,'analyse/spiderStatus.html');

@@ -14,7 +14,6 @@ app = Celery(project_name,
              broker='redis://localhost:6379',
              backend='redis://localhost:6379'
              )
-
 # 使用 Django 的 settings 文件配置 Celery
 app.config_from_object('django.conf:settings')
 
