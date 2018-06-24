@@ -1,9 +1,9 @@
 {% load static %}
 <header>
 
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
-{#    <link rel="stylesheet" href="{% static "css/style.css" %}">#}
-    <link rel="stylesheet" href="{% static "css/animate.min.css" %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+{#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </header>
 
@@ -58,8 +58,8 @@
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
                             <img src="{% static 'img/home/icon3.png' %}" alt="">
                         </div>
-                        <h2>Swift Page Builder</h2>
-                        <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
+                        <h2>数据下载</h2>
+                        <p>数据分析的结果均支持免费下载，当然也支持原始数据下载。</p>
                     </div>
                 </div>
             </div>
@@ -73,20 +73,20 @@
             <div class="row">
                 <div class="single-features">
                     <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="{% static 'img/home/image1.png' %}" class="img-responsive" alt="">
+                        <img src="{% static 'img/home/cnki.jpg' %}" class="img-responsive" alt="">
                     </div>
                     <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Experienced and Enthusiastic</h2>
-                        <P>Pork belly leberkas cow short ribs capicola pork loin. Doner fatback frankfurter jerky meatball pastrami bacon tail sausage. Turkey fatback ball tip, tri-tip tenderloin drumstick salami strip steak.</P>
+                        <h2>知网大数据</h2>
+                        <P>通过智能的在线爬虫，实时抓取特定的论文信息，实时针对数据在线分析，快速了解某个领域</P>
                     </div>
                 </div>
                 <div class="single-features">
                     <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Built for the Responsive Web</h2>
-                        <P>Mollit eiusmod id chuck turducken laboris meatloaf pork loin tenderloin swine. Pancetta excepteur fugiat strip steak tri-tip. Swine salami eiusmod sint, ex id venison non. Fugiat ea jowl cillum meatloaf.</P>
+                        <h2>可视化图表</h2>
+                        <P>精准的可视化数据图表，让数据一览无余，找出数据背后的价值</P>
                     </div>
                     <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="{% static 'img/home/image2.png' %}" class="img-responsive" alt="">
+                        <img style="border-radius: 10px;" src="{% static 'img/home/chart.jpg' %}" class="img-responsive" alt="">
                     </div>
                 </div>
                 <div class="single-features">
@@ -101,42 +101,7 @@
             </div>
         </div>
     </section>
-     <!--/#features-->
 
-    <section id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
-                        <h1 class="title">Happy Clients</h1>
-                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud </p>
-                    </div>
-                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="{% static 'img/home/client1.png'%}" class="img-responsive" alt=""></a>
-                        </div>
-                        <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="{% static 'img/home/client2.png'%}" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="{% static 'img/home/client3.png'%}" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="{% static 'img/home/client4.png'%}" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="{% static 'img/home/client5.png'%}" class="img-responsive" alt=""></a>
-                        </div>
-                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="{% static 'img/home/client6.png'%}" class="img-responsive" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!--/#clients-->
 
     <footer id="footer">
         <div class="container">
@@ -144,59 +109,35 @@
                 <div class="col-sm-12 text-center bottom-separator">
                     <img src="{% static 'img/home/under.png' %}" class="img-responsive inline" alt="">
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="testimonial bottom">
-                        <h2>Testimonial</h2>
-                        <div class="media">
-                            <div class="pull-left">
-                                <a href="#"><img src="{% static 'img/home/profile1.png' %}" alt=""></a>
-                            </div>
-                            <div class="media-body">
-                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
-                                <h3><a href="#">- Jhon Kalis</a></h3>
-                            </div>
-                         </div>
-                        <div class="media">
-                            <div class="pull-left">
-                                <a href="#"><img src="{% static 'img/home/profile2.png' %}" alt=""></a>
-                            </div>
-                            <div class="media-body">
-                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
-                                <h3><a href="">- Abraham Josef</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-6 col-sm-6" style="padding-left: 10%">
                     <div class="contact-info bottom">
-                        <h2>Contacts</h2>
+                        <h2>联系方式</h2>
                         <address>
-                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br>
-                        Phone: +1 (123) 456 7890 <br>
-                        Fax: +1 (123) 456 7891 <br>
+                        E-mail: <a href="mailto:someone@example.com">2522011411@qq.com</a> <br>
+                        Phone: 18796323596 <br>
+                        QQ: 2522011411 <br>
                         </address>
 
-                        <h2>Address</h2>
+                        <h2>地址</h2>
                         <address>
-                        Unit C2, St.Vincent's Trading Est., <br>
-                        Feeder Road, <br>
-                        Bristol, BS2 0UY <br>
-                        United Kingdom <br>
+                        江苏省徐州市 <br>
+                            泉山区江苏师范大学<br>
+                            智慧教育学院
                         </address>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <div class="contact-form bottom">
-                        <h2>Send a message</h2>
-                        <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                        <h2>在线联系</h2>
+                        <form id="main-contact-form" name="contact-form" method="post" action="">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+                                <input type="text" name="name" class="form-control" required="required" placeholder="您的姓名">
                             </div>
                             <div class="form-group">
-                                <input type="email" name="email" class="form-control" required="required" placeholder="Email Id">
+                                <input type="email" name="email" class="form-control" required="required" placeholder="您的邮箱">
                             </div>
                             <div class="form-group">
-                                <textarea name="message" id="message" required class="form-control" rows="8" placeholder="Your text here"></textarea>
+                                <textarea name="message" id="message" required class="form-control" rows="8" placeholder="您的建议或者疑惑"></textarea>
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-submit" value="Submit">
@@ -206,8 +147,8 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="copyright-text text-center">
-                        <p>&copy; Your Company 2014. All Rights Reserved.</p>
-                        <p>Designed by <a target="_blank" href="http://www.jq22.com">Themeum</a></p>
+                        <p>&copy; 知网大数据 2019. All Rights Reserved.</p>
+                        <p>Designed by <a target="_blank" href="http://www.jq22.com">尚衍亮</a></p>
                     </div>
                 </div>
             </div>

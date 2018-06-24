@@ -1,3 +1,5 @@
+#coding:utf8
+
 from spider.get_cookies import getCookies
 import time
 from bs4 import BeautifulSoup
@@ -7,6 +9,8 @@ import time
 
 from celery import task
 
+import redis
+
 
 # this is celery settings
 
@@ -14,15 +18,19 @@ from celery import task
 # this is a function about need many time
 
 @task
-def paperSpider():
+def paperSpider(keyWord):
     print('爬虫启动')
-    cookies, total_num = getCookies('大数据')
+    conn = redis.Redis(host='127.0.0.1', port=6379,db=1,charset='utf-8',)
+    print('reids 连接成功')
+    key_word=keyWord
+    cookies, total_num = getCookies(key_word)
     cookies = dict(cookies)
     urls = [
         'http://kns.cnki.net/kns/brief/brief.aspx?curpage={0}&RecordsPerPage=50&QueryID=0&ID=&turnpage=1&tpagemode=L&dbPrefix=SCDB&Fields=&DisplayMode=listmode&PageName=ASP.brief_default_result_aspx#J_ORDER&'.format(
             page) for page in range(1, int(total_num / 20))]
     k = 1
     for url in urls:
+        num = 0
         r = requests.get(url, cookies=cookies)
         soup = BeautifulSoup(r.text, 'lxml')
         results = soup.select('.GridTableContent tr')
@@ -42,8 +50,14 @@ def paperSpider():
                 if r.has_attr('bgcolor'):
                     record = r.select('td')[1].find('a')
 
-                    year = r.select('td')[4].text
+                    year = str(r.select('td')[4].text)
                     paper_url = 'http://kns.cnki.net' + str(record.attrs['href']).replace('kns', 'KCMS')
-                    title = record.text
-                    print(record.text, paper_url)
+                    title = str(record.text)
+                    num = num + 1;
+                    # paper_detail = {
+                    #     title: title,
+                    # }
+                    conn.sadd(key_word,record.text)
+                    spider_data = conn.smembers('大数据')
         time.sleep(3)
+# paperSpider()

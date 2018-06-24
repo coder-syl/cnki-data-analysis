@@ -1,24 +1,10 @@
 ## 毕业设计--中国知网爬虫及数据可视化
 ### 技术选型
 
-1. 爬虫
-	1. python3
-	2. BeautifulSoup4
-	3. Requests
-2. 可视化网站
-	1. Django
-	2. RabbitMq
-	3. celery
-	
-### 实现功能
+## 使用
+1. redis-server
+2. python manage.py
+3. celery -A cnki worker -l info
+4. python manage.py celerycam
 
-#### 爬虫
-1. 基本信息抓取
-2. 目标实现论文下载
-3. 
-
-
-#### 网站
-1. 基本信息展示
-2. 基本数据分析
-3. 重点对对文章引用率的分析
+## 网站截图
