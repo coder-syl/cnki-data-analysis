@@ -1,162 +1,123 @@
 {% load static %}
-<header>
 
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-{#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
-    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-</header>
+<title>首页</title>
+{% include "analyse/header.html" %}
+<section id="home-slider">
+    <div class="container">
+        <div class="row">
+            <div class="main-slider">
+                <div class="slide-text">
+                    <h1>知网大数据</h1>
+                    <p>本系统采用Django+Celery实现在线知网爬虫，并针对爬取的数据进行实时的数据分析</p>
+                    <a href="#" class="btn btn-common">欢迎使用</a>
+                </div>
+                <img src="{% static 'img/home/analyse.png' %}" class="slider-hill" alt="slider image">
+            </div>
+        </div>
+    </div>
+    <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+</section>
+<!--/#home-slider-->
 
-<body>
-	{% include "analyse/header.html" %}
-    <!--/#header-->
-
-    <section id="home-slider">
-        <div class="container">
-            <div class="row">
-                <div class="main-slider">
-                    <div class="slide-text">
-                        <h1>知网大数据</h1>
-                        <p>本系统采用Django+Celery实现在线知网爬虫，并针对爬取的数据进行实时的数据分析</p>
-                        <a href="#" class="btn btn-common">欢迎使用</a>
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="single-service">
+                    <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="{% static 'img/home/icon1.png' %}" alt="">
                     </div>
-                    <img src="{% static 'img/home/analyse.png' %}" class="slider-hill" alt="slider image">
-{#                    <img src="{% static 'img/home/slider/house.png' %}" class="slider-house" alt="slider image">#}
-{#                    <img src="{% static 'img/home/slider/sun.png' %}" class="slider-sun" alt="slider image">#}
-{#                    <img src="{% static 'img/home/slider/birds1.png'%}" class="slider-birds1" alt="slider image">#}
-{#                    <img src="{% static 'img/home/slider/birds2.png'%}" class="slider-birds2" alt="slider image">#}
+                    <h2>在线智能爬虫</h2>
+                    <p>提供关键词，实时开启知网爬虫模块，自动化采集，摒弃人工采集.</p>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="single-service">
+                    <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <img src="{% static 'img/home/icon2.png'%}" alt="">
+                    </div>
+                    <h2>实时数据分析</h2>
+                    <p>依靠抓取的论文数据，实时分析论文的数据，图表清晰可见，提供分析数据的下载</p>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                <div class="single-service">
+                    <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                        <img src="{% static 'img/home/icon3.png' %}" alt="">
+                    </div>
+                    <h2>数据下载</h2>
+                    <p>数据分析的结果均支持免费下载，当然也支持原始数据下载。</p>
                 </div>
             </div>
         </div>
-        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
-    </section>
-    <!--/#home-slider-->
-
-    <section id="services">
+    </div>
+</section>
+<section id="action">
+    <div class="vertical-center">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="{% static 'img/home/icon1.png' %}" alt="">
-                        </div>
-                        <h2>在线智能爬虫</h2>
-                        <p>提供关键词，实时开启知网爬虫模块，自动化采集，避免人工采用。希望实现爬虫的暂停和结束</p>
+                <div class="action count">
+                    <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms"
+                         data-wow-delay="300ms">
+                        <h1 class="timer bold" data-to="7000" data-speed="3000" data-from="0"></h1>
+                        <h3>论文</h3>
                     </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="{% static 'img/home/icon2.png'%}" alt="">
-                        </div>
-                        <h2>实时数据分析</h2>
-                        <p>依靠抓取的论文数据，实时分析论文的数据，图表清晰可见，提供分析数据的下载</p>
+                    <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms"
+                         data-wow-delay="300ms">
+                        <h1 class="timer bold" data-to="12" data-speed="3000" data-from="0"></h1>
+                        <h3>发表者</h3>
                     </div>
-                </div>
-                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                    <div class="single-service">
-                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <img src="{% static 'img/home/icon3.png' %}" alt="">
-                        </div>
-                        <h2>数据下载</h2>
-                        <p>数据分析的结果均支持免费下载，当然也支持原始数据下载。</p>
+                    <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms"
+                         data-wow-delay="300ms">
+                        <h1 class="timer bold" data-to="432" data-speed="3000" data-from="0"></h1>
+                        <h3>关键词</h3>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="features">
-        <div class="container">
-            <div class="row">
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="{% static 'img/home/cnki.jpg' %}" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>知网大数据</h2>
-                        <P>通过智能的在线爬虫，实时抓取特定的论文信息，实时针对数据在线分析，快速了解某个领域</P>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>可视化图表</h2>
-                        <P>精准的可视化数据图表，让数据一览无余，找出数据背后的价值</P>
-                    </div>
-                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img style="border-radius: 10px;" src="{% static 'img/home/chart.jpg' %}" class="img-responsive" alt="">
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="{% static 'img/home/image3.png' %}" class="img-responsive" alt="">
-                    </div>
-                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Experienced and Enthusiastic</h2>
-                        <P>Ut officia cupidatat anim excepteur fugiat cillum ea occaecat rump pork chop tempor. Ut tenderloin veniam commodo. Shankle aliquip short ribs, chicken eiusmod exercitation shank landjaeger spare ribs corned beef.</P>
+                    <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms"
+                         data-wow-delay="300ms">
+                        <h1 class="timer bold" data-to="145" data-speed="3000" data-from="0"></h1>
+                        <h3>高校</h3>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center bottom-separator">
-                    <img src="{% static 'img/home/under.png' %}" class="img-responsive inline" alt="">
+    </div>
+</section>
+<section id="features">
+    <div class="container">
+        <div class="row">
+            <div class="single-features">
+                <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <img src="{% static 'img/home/cnki.png' %}" class="img-responsive imgBorder" alt="">
                 </div>
-                <div class="col-md-6 col-sm-6" style="padding-left: 10%">
-                    <div class="contact-info bottom">
-                        <h2>联系方式</h2>
-                        <address>
-                        E-mail: <a href="mailto:someone@example.com">2522011411@qq.com</a> <br>
-                        Phone: 18796323596 <br>
-                        QQ: 2522011411 <br>
-                        </address>
-
-                        <h2>地址</h2>
-                        <address>
-                        江苏省徐州市 <br>
-                            泉山区江苏师范大学<br>
-                            智慧教育学院
-                        </address>
-                    </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h2>知网大数据</h2>
+                    <P>通过智能的在线爬虫，实时抓取特定的论文信息，实时针对数据在线分析，快速了解某个领域</P>
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="contact-form bottom">
-                        <h2>在线联系</h2>
-                        <form id="main-contact-form" name="contact-form" method="post" action="">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="您的姓名">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" required="required" placeholder="您的邮箱">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" id="message" required class="form-control" rows="8" placeholder="您的建议或者疑惑"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
-                            </div>
-                        </form>
-                    </div>
+            </div>
+            <div class="single-features">
+                <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms"
+                     data-wow-delay="300ms">
+                    <h2>可视化图表</h2>
+                    <P>精准的可视化数据图表，让数据一览无余，找出数据背后的价值.提供多样式的表格数据展示，满足多种数据阅读需要,支持灵活地筛选需要观察的数据</P>
                 </div>
-                <div class="col-sm-12">
-                    <div class="copyright-text text-center">
-                        <p>&copy; 知网大数据 2019. All Rights Reserved.</p>
-                        <p>Designed by <a target="_blank" href="http://www.jq22.com">尚衍亮</a></p>
-                    </div>
+                <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <img src="{% static 'img/home/chart.png' %}" class="img-responsive imgBorder" alt="">
+                </div>
+            </div>
+            <div class="single-features">
+                <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <img src="{% static 'img/home/btos.png' %}" class="img-responsive imgBorder" alt="">
+                </div>
+                <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <h2>性能稳定的分析平台</h2>
+                    <P>将数据分析和爬虫相结合，使用户可以从复杂的代码编写中解放出来，快速的抓取和分析知网数据；</P>
                 </div>
             </div>
         </div>
-    </footer>
-    <!--/#footer-->
+    </div>
+</section>
 
-    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-     <script type="text/javascript" src="{% static 'js/bootstrap.min.js'%}"></script>
-     <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+
+
+{% include "analyse/footer.html" %}
+

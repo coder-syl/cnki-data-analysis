@@ -2,18 +2,134 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2df1dcb-88b1-4a8b-a435-d7f0f7bc9bc0" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cnki/analyse/static/img/home/cnki.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cnki/analyse/templates/analyse/footer.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cnki/analyse/static/css/main.css" afterPath="$PROJECT_DIR$/cnki/analyse/static/css/main.css" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/chart.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/chart.png" afterPath="$PROJECT_DIR$/cnki/analyse/static/img/home/chart.png" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/cnki.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/image1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/image2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/image3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/slider/birds1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/slider/birds2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/slider/hill.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/slider/house.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/slider/sun.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/img/home/tour-icon2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/layui.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/layui.mobile.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/modules/code.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/modules/laydate/default/laydate.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/modules/layer/default/icon-ext.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/modules/layer/default/icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/modules/layer/default/layer.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/modules/layer/default/loading-0.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/modules/layer/default/loading-1.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/css/modules/layer/default/loading-2.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/font/iconfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/font/iconfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/font/iconfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/font/iconfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/0.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/1.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/10.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/11.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/12.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/13.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/14.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/15.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/16.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/17.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/18.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/19.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/2.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/20.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/21.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/22.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/23.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/24.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/25.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/26.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/27.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/28.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/29.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/3.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/30.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/31.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/32.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/33.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/34.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/35.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/36.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/37.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/38.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/39.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/4.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/40.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/41.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/42.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/43.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/44.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/45.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/46.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/47.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/48.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/49.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/5.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/50.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/51.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/52.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/53.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/54.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/55.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/56.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/57.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/58.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/59.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/6.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/60.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/61.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/62.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/63.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/64.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/65.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/66.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/67.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/68.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/69.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/7.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/70.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/71.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/8.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/images/face/9.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/carousel.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/code.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/element.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/flow.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/form.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/laydate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/layedit.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/layer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/laypage.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/laytpl.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/mobile.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/rate.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/table.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/tree.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/upload.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/lay/modules/util.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/layui.all.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/static/layui/layui.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/cnki/analyse/templates/analyse/header.html" afterPath="$PROJECT_DIR$/cnki/analyse/templates/analyse/header.html" />
       <change beforePath="$PROJECT_DIR$/cnki/analyse/templates/analyse/index.html" afterPath="$PROJECT_DIR$/cnki/analyse/templates/analyse/index.html" />
       <change beforePath="$PROJECT_DIR$/cnki/analyse/templates/analyse/spiderStatus.html" afterPath="$PROJECT_DIR$/cnki/analyse/templates/analyse/spiderStatus.html" />
-      <change beforePath="$PROJECT_DIR$/cnki/analyse/urls.py" afterPath="$PROJECT_DIR$/cnki/analyse/urls.py" />
-      <change beforePath="$PROJECT_DIR$/cnki/analyse/views.py" afterPath="$PROJECT_DIR$/cnki/analyse/views.py" />
-      <change beforePath="$PROJECT_DIR$/cnki/celeryev.pid" afterPath="$PROJECT_DIR$/cnki/celeryev.pid" />
+      <change beforePath="$PROJECT_DIR$/cnki/analyse/templates/analyse/startSpider.html" afterPath="$PROJECT_DIR$/cnki/analyse/templates/analyse/startSpider.html" />
       <change beforePath="$PROJECT_DIR$/cnki/db.sqlite3" afterPath="$PROJECT_DIR$/cnki/db.sqlite3" />
       <change beforePath="$PROJECT_DIR$/cnki/dump.rdb" afterPath="$PROJECT_DIR$/cnki/dump.rdb" />
-      <change beforePath="$PROJECT_DIR$/cnki/spider/paper_spider.py" afterPath="$PROJECT_DIR$/cnki/spider/paper_spider.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,40 +140,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cnki/cnki/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="39" column="10" lean-forward="false" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-              <folding>
-                <element signature="e#305#314#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="spiderStatus.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/spiderStatus.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="2641">
+              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cnki/analyse/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,32 +194,30 @@
       <file leaf-file-name="startSpider.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/startSpider.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="38">
+              <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/index.html">
+      <file leaf-file-name="header.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cnki/analyse/static/css/header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="88" column="52" lean-forward="false" selection-start-line="88" selection-start-column="52" selection-end-line="88" selection-end-column="52" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cnki/analyse/static/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-412">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -136,20 +226,70 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cnki/analyse/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="24" />
+            <state relative-caret-position="20">
+              <caret line="535" column="20" lean-forward="false" selection-start-line="535" selection-start-column="20" selection-end-line="535" selection-end-column="20" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <folding>
+                <element signature="n#section#2;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.btn-dange</find>
-      <find>Licensed under MIT (https://github.com/twbs</find>
       <find>img</find>
+      <find>fadeInRight</find>
+      <find>single-features</find>
+      <find>contain</find>
+      <find>home/</find>
+      <find>img-responsive</find>
+      <find>touy</find>
+      <find>Licensed under MIT (https://github.com/twbs</find>
+      <find>sing</find>
+      <find>font</find>
+      <find>font-wei</find>
+      <find>overlay</find>
+      <find>arrow-left</find>
+      <find>se</find>
+      <find>action</find>
+      <find>10px</find>
+      <find>timeline-date</find>
+      <find>post-title</find>
+      <find>post-content</find>
+      <find>btn-common</find>
+      <find>btn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,9 +302,11 @@
         <option value="$PROJECT_DIR$/cnki/cnki/settings.py" />
         <option value="$PROJECT_DIR$/cnki/analyse/views.py" />
         <option value="$PROJECT_DIR$/cnki/spider/paper_spider.py" />
-        <option value="$PROJECT_DIR$/cnki/analyse/templates/analyse/spiderStatus.html" />
-        <option value="$PROJECT_DIR$/cnki/analyse/templates/analyse/startSpider.html" />
         <option value="$PROJECT_DIR$/cnki/analyse/static/css/main.css" />
+        <option value="$PROJECT_DIR$/cnki/analyse/templates/analyse/header.html" />
+        <option value="$PROJECT_DIR$/cnki/analyse/templates/analyse/footer.html" />
+        <option value="$PROJECT_DIR$/cnki/analyse/templates/analyse/startSpider.html" />
+        <option value="$PROJECT_DIR$/cnki/analyse/templates/analyse/spiderStatus.html" />
         <option value="$PROJECT_DIR$/cnki/analyse/templates/analyse/index.html" />
       </list>
     </option>
@@ -247,24 +389,7 @@
               <item name="cnki" type="cbb8eebc:String" user="cnki" />
               <item name="analyse" type="cbb8eebc:String" user="analyse" />
               <item name="static" type="cbb8eebc:String" user="static" />
-              <item name="img" type="cbb8eebc:String" user="img" />
-              <item name="home" type="cbb8eebc:String" user="home" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="cnki-data-analysis" type="cbb8eebc:String" user="cnki-data-analysis" />
-              <item name="cnki" type="cbb8eebc:String" user="cnki" />
-              <item name="analyse" type="cbb8eebc:String" user="analyse" />
-              <item name="static" type="cbb8eebc:String" user="static" />
               <item name="js" type="cbb8eebc:String" user="js" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="cnki-data-analysis" type="cbb8eebc:String" user="cnki-data-analysis" />
-              <item name="cnki" type="cbb8eebc:String" user="cnki" />
-              <item name="analyse" type="cbb8eebc:String" user="analyse" />
-              <item name="static" type="cbb8eebc:String" user="static" />
-              <item name="layui" type="cbb8eebc:String" user="layui" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
@@ -307,6 +432,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cnki/analyse/static/img/home" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -346,7 +477,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17638889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16597222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -402,14 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cnki/analyse/static/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -423,17 +546,7 @@
         <state relative-caret-position="319">
           <caret line="39" column="10" lean-forward="false" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
           <folding>
-            <element signature="e#305#314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnki/cnki/celery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
+            <element signature="e#305#314#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -443,9 +556,22 @@
         <state relative-caret-position="366">
           <caret line="35" column="34" lean-forward="false" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnki/analyse/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnki/analyse/static/img/home/cnki.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cnki/spider/get_cookies.py">
@@ -454,29 +580,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/spiderStatus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/startSpider.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -491,28 +594,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cnki/analyse/static/css/main.css">
+    <entry file="file://$PROJECT_DIR$/cnki/cnki/celery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnki/analyse/static/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-412">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cnki/analyse/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/cnki/analyse/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="535" column="20" lean-forward="false" selection-start-line="535" selection-start-column="20" selection-end-line="535" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/startSpider.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/spiderStatus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2641">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cnki/analyse/templates/analyse/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="88" column="52" lean-forward="false" selection-start-line="88" selection-start-column="52" selection-end-line="88" selection-end-column="52" />
+        <state relative-caret-position="553">
+          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#section#2;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

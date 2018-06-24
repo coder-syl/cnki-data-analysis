@@ -1,50 +1,97 @@
 {% load static %}
-<header>
 
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<title>启动爬虫</title>
 
-    <title></title>
-
-    <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</header>
-
-<body>
-<div>
+{% include 'analyse/header.html' %}
+<section id="services">
     <div class="container">
-        {% include 'analyse/header.html' %}
-        <div class="col-lg-10" >
+        <div class="row">
             <form class="form" role="form" action="{% url  'spider' %}" method="get">
-                <div class="col-lg-10" style="padding-left: 80px; ">
+                <div class="col-lg-10" style="padding-left: 50px; ">
                     <div class="form-group">
                         <div class="col-lg-12">
-                            <input type="text" required name="keyWord" class="form-control input-lg" id="keyWord" placeholder="请输入你要爬取的关键字">
+                            <input type="text" required name="keyWord" class="form-control input-lg" id="keyWord"
+                                   placeholder="请输入你要爬取的关键字">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-2" ;">
+                <div class="col-lg-2">
                     <div class="form-group">
                         <div class="col-sm-10">
-                            <button type="submit" class="btn btn-info btn-lg" id="spiderBtn">开启爬虫</button>
+                            <button type="submit" class="btn" id="spiderBtn">开启爬虫
+                            </button>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
     </div>
-</div>
+</section>
+<section id="blog" class="padding-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="timeline-blog overflow padding-top">
+                <div class="timeline-date text-center">
+                    <a href="#" class="btn btn-common uppercase">使用步骤</a>
+                </div>
+                <div class="timeline-divider overflow padding-bottom">
+                    <div class="col-sm-6 padding-right arrow-right wow fadeInLeft" data-wow-duration="1000ms"
+                         data-wow-delay="300ms">
+                        <div class="single-blog timeline">
+                            <div class="post-content overflow">
+                                <h2 class="post-title bold"><p>输入关键词</p></h2>
+                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                    consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                                    iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
+                                    te feugait nulla facilisi. Nam liber [...]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 padding-left padding-top arrow-left wow fadeInRight" data-wow-duration="1000ms"
+                         data-wow-delay="300ms">
+                        <div class="single-blog timeline">
+                            <div class="post-content overflow">
+                                <h2 class="post-title bold"><p>等待数据爬取</a></h2>
+                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                    consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                                    iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
+                                    te feugait nulla facilisi. Nam liber [...]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 padding-right arrow-right wow fadeInLeft" data-wow-duration="1000ms"
+                         data-wow-delay="300ms">
+                        <div class="single-blog timeline">
+                            <div class="post-content overflow">
+                                <h2 class="post-title bold"><p>点击数据分析</a></h2>
+                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                    consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                                    iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
+                                    te feugait nulla facilisi. Nam liber [...]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 padding-left padding-top arrow-left wow fadeInRight" data-wow-duration="1000ms"
+                         data-wow-delay="300ms">
+                        <div class="single-blog timeline">
+                            <div class="post-content overflow">
+                                <h2 class="post-title bold"><p>数据下载</a></h2>
+                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                    consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                                    iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore
+                                    te feugait nulla facilisi. Nam liber [...]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="timeline-date text-center">-->
+            <!--<a href="#" class="btn btn-common">欢迎使用</a>-->
+            <!--</div>-->
+        </div>
+    </div>
+    </div>
+</section>
+{% include "analyse/footer.html" %}
 
-
-</div>
-</body>
