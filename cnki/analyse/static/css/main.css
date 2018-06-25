@@ -564,10 +564,6 @@ Blog Default
     width: 100%;
 }
 
-
-
-
-
 .timeline-divider {
     position: relative;
     padding-top: 50px;
@@ -624,7 +620,7 @@ Blog Default
     position: absolute;
     left: -2px;
     content: "";
-    top: 140px;
+    top: 100px;
     background: url(../img/blog/right.png);
     width: 43px;
     height: 54px;
@@ -641,3 +637,131 @@ Blog Default
 
 
 
+
+/*profile*/
+
+.portfolio-single {
+  position: relative;
+}
+
+.portfolio-thumb {
+  position: relative;
+}
+
+.portfolio-thumb img {
+  width: 100%;
+}
+
+
+.portfolio-single:hover .portfolio-view{
+  display: block;
+  -webkit-animation: fadeInUp 400ms;
+  animation: fadeInUp 400ms;
+}
+
+#portfolio .row{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.portfolio-view {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background:rgba(112, 35, 64, 0.9);
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio-view .nav-pills {
+  padding: 0;
+  display: inline-block;
+  margin-top: -26px;
+  top: 50%;
+  position: relative;
+}
+
+.portfolio-view .nav-pills li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.portfolio-view .nav-pills li a {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  padding: 0;
+  border-radius: 40px;
+  -webkit-animation: scaleIn 400ms linear 100ms both;
+  animation: scaleIn 400ms linear 100ms both;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.portfolio-view .nav-pills li a:hover {
+  color: #702340;
+  border-color: #702340;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.portfolio-info {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.portfolio-info h2 {
+  font-size: 18px;
+    margin-left: 30%;
+  /*margin: 15px 0 0;*/
+}
+
+.portfolio-filter {
+  margin: 80px 0;
+  padding: 0;
+}
+
+.portfolio-filter li {
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-filter li a {
+  border-radius: 0;
+    color: #000;
+
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 25px;
+  text-transform: capitalize;
+  border: none;
+}
+
+.portfolio-filter li .active{
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.portfolio-filter li a:hover,
+.portfolio-filter li a:focus,
+.portfolio-filter li a.active {
+  background: #fff;
+    color: #00aeef;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.portfolio-filter li a.active:before{
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 13px;
+  height: 16px;
+  background: url(../img/portfolio/icon.png);
+  top: 3px;
+}

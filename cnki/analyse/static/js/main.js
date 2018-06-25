@@ -30,14 +30,14 @@ jQuery(function($) {'use strict';
 		}
 
 		var $portfolio_selectors = $('.portfolio-filter >li>a');
-		
 		if($portfolio_selectors.length) {
-			
+			// console.log($portfolio_selectors.length);
 			var $portfolio = $('.portfolio-items');
-			$portfolio.isotope({
+			console.log($portfolio)
+			if($portfolio.isotope({
 				itemSelector : '.portfolio-item',
 				layoutMode : 'fitRows'
-			});
+			})){console.log('susscess')};
 			
 			$portfolio_selectors.on('click', function(){
 				$portfolio_selectors.removeClass('active');

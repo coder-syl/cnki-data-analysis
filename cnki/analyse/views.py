@@ -13,17 +13,18 @@ def index(request):
     return render(request, 'analyse/index.html')
 
 
+def paperAnalyse(request):
+    return render(request, 'analyse/paperAnalyse.html')
 
 
 def startSpider(request):
-
-    return render(request,'analyse/startSpider.html')
+    return render(request, 'analyse/startSpider.html')
 
 
 def spider(request):
     request.encoding = 'utf-8'
     if 'keyWord' in request.GET:
-        keyWord=request.GET['keyWord']
+        keyWord = request.GET['keyWord']
         context = {
             'keyWord': keyWord,
         }
@@ -33,13 +34,13 @@ def spider(request):
         # print(message)
         return HttpResponse(message)
 
-    data=paperSpider.delay(keyWord)
+    data = paperSpider.delay(keyWord)
 
-    return render(request, 'analyse/spiderStatus.html',context)
+    return render(request, 'analyse/spiderStatus.html', context)
 
 
 def getSpiderData(request):
-    keyWord=request.GET['keyWord']
+    keyWord = request.GET['keyWord']
     conn = redis.Redis(host='127.0.0.1', port=6379, db=1)
     spider_datas = conn.smembers(keyWord)
     data = []
