@@ -1,5 +1,19 @@
 {% load static %}
+
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css"
+      href="http://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.css">
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8"
+        src="http://cdn.datatables.net/plug-ins/28e7751dbec/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+{% include "analyse/importCSS.html" %}
+
 <title>爬虫状态</title>
 
 <div>
@@ -7,146 +21,65 @@
 
         {% include 'analyse/header.html' %}
         <div class="col-sm-12">
-            <div class="alert alert-success" style="display: none;z-index: 10" id="spiderInfo">
+            <div class="alert alert-success" style="z-index: 10" id="spiderInfo">
                 <a href="#" class="close" data-dismiss="alert">
                     &times;
                 </a>
-                <strong>爬虫已启动</strong>
+                <strong>爬虫已启动！！！稍等，数据马上就爬取好！</strong>
             </div>
         </div>
 
         <div class="col-sm-12" style="margin-top: 30px;color:#686868;font-weight: 300">
-            <table class="table">
+            <table id="example" class="table " cellspacing="0" width="100%">
                 <thead>
-                <tr style="color:#686868;font-weight: 300">
-                    <th>keyword</th>
-                    <th>论文数量</th>
-                    <th>爬虫状态</th>
+                <tr>
+                    <th data-field="id">ID</th>
+                    <th data-field="title">文章标题</th>
+                    <th data-field="year">发表年份</th>
+                    <th>论文详情</th>
+                    <!--<th data-field="local_url"><a href="local_url"></a></th>-->
                 </tr>
                 </thead>
-                <tbody>
-                <tr id="status" style="color:#686868;font-weight: 300">
-                    <td>keyword</td>
-                    <td>0</td>
-                    <td>未启动</td>
-                </tr>
-                <tr id="paper" style="color:#686868;font-weight: 300">
-                    <td>已经抓取的论文</td>
-                    <td>0</td>
-                    <td>成功</td>
-                </tr>
-                </tbody>
             </table>
         </div>
     </div>
 </div>
 {% include "analyse/footer.html" %}
 <script>
-
-    var temp = null;
-    var num = 0;
-    var stop = 0;
-    var getData;
-    // $('#spiderBtn').click(function () {
-    //   axios.get({% url 'startSpider' %});
-    $('.table tr:eq(1) td:nth-child(1)').html('{{keyWord}}');
-    $('#spiderInfo').css('display', 'block');
-    setTimeout(function () {
-        $('#spiderInfo').fadeOut(2000)
-    }, 2000);
-    setTimeout('getData = setInterval(getSpiderData, 2000);', 10000)
-    console.log('开始获取数据');
-
-
-    // });
-
-    function getSpiderData() {
-
-        axios.get('{% url "getSpiderData" %}?keyWord={{keyWord}}')
-            .then(function (response) {
-                    let count1 = getLength(response.data);
-                    let count2 = getLength(temp);
-                    console.log(count1, count1);
-                    $('.table tr:eq(1) td:nth-child(2)').html(count1);
-                    $('.table tr:eq(1) td:nth-child(3)').html('正在运行');
-                    if (count1 == 0) {
-                        num = 0;
-                        stop++;
-                        if (stop === 10) {
-                            console.log('10次数据不变，现在关闭询问');
-
-                            $('.table tr:eq(1) td:nth-child(2)').html('未抓取到数据');
-                            $('.table tr:eq(1) td:nth-child(3)').html('爬虫停止').css('color', '#F56C6C');
-                            clearInterval(getData);
-                        }
-
-                    } else {
-
-                        if (count1 === count2) {
-                            num++;
-                            console.log('数据一致');
-                            // var lastData = response.data;//.slice(0, 10);
-                            // console.log('显示数据');
-                            // console.log('data', lastData);
-                            // for (let i in lastData) //data.data指的是数组，数组里是8个对象，i为数组的索引
-                            // {
-                            //     console.log(i);
-                            //     console.log('显示数据');
-                            //     var tr;
-                            //     tr = '<td>' + lastData[i]['title'] + '</td>';
-                            //     // + '<td>' + data.data[i].startTime + '</td>' + '<td>' + data.data[i].is_true + '</td>' + '<td>' + data.data[i].device + '</td>'
-                            //     $(".table").append('<tr>' + tr + '</tr>')
-                            //     // $('.table tr:eq(2) td:nth-child(2)').html(lastData[i]['title']);
-                            // }
-                            if (num === 10) {
-                                console.log('10次数据不变，现在关闭询问');
-                                $('.table tr:eq(1) td:nth-child(2)').html(count1);
-                                $('.table tr:eq(1) td:nth-child(3)').html('爬虫停止').css('color', '#F56C6C');
-                                clearInterval(getData);
-                            }
-                        } else {
-                            console.log('数据不一致')
-                            num = 0;
-                            // var lastData = response.data.slice(0, 1);
-                            // console.log('显示数据');
-                            // console.log('data', lastData);
-                            // for (let i in lastData) //data.data指的是数组，数组里是8个对象，i为数组的索引
-                            // {
-                            //     console.log(i);
-                            //     console.log('显示数据');
-                            //     var tr;
-                            //     tr = '<td>' + lastData[i]['title'] + '</td>';
-                            //     // + '<td>' + data.data[i].startTime + '</td>' + '<td>' + data.data[i].is_true + '</td>' + '<td>' + data.data[i].device + '</td>'
-                            //     $(".table").append('<tr>' + tr + '</tr>')
-                            //     // $('.table tr:eq(2) td:nth-child(2)').html(lastData[i]['title']);
-                            //
-                            // }
-
-                        }
+    $(document).ready(function () {
+        let ajaxCount = 0;
+        var table = $('#example').DataTable({
+            "ajax": "{% url 'getSpiderData' %}?keyWord={{keyWord}}",
+            "columns": [
+                {"data": "id"},
+                {"data": "title"},
+                {"data": "public_year"},
+                {
+                    "data": "local_url",
+                    render: function (data, type, full) {
+                        return "<a  target='_blank' href='paperDetail?title=" + full.title + "'>" + '论文详情' + "</a>";
                     }
-                    temp = response.data;
-                    /*for(i in response.data){
-                        console.log(i['title'])
+                },
+            ]
 
-                    }*/
+        });
+
+        var begin = setInterval(function () {
+            ajaxCount++;
+            console.log('获取数据');
+            table.ajax.reload();
+
+            console.log(ajaxCount);
+            if (ajaxCount > 30) {
+                console.log('轮询次数过多');
+                $('#spiderInfo').text('抓取完成');
+                clearInterval(begin);
+            }
+        }, 5000);
 
 
-                }
-            )
-            .catch(function (error) {
-                console.log(error);
-            });
-    }
 
-
-    function getLength(object) {
-        let count = 0;
-        for (i in object) {
-            count++;
-        }
-        return count;
-
-    }
+    });
 
 </script>
 

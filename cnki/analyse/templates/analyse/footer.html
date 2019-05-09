@@ -1,4 +1,5 @@
 {% load static %}
+
 <footer id="footer">
     <div class="container">
         <div class="row">
@@ -25,7 +26,8 @@
             <div class="col-md-6 col-sm-12">
                 <div class="contact-form bottom">
                     <h2>在线联系</h2>
-                    <form id="main-contact-form" name="contact-form" method="post" action="">
+                    <form id="main-contact-form" name="contact-form" method="get"  >
+                                {% csrf_token %}
                         <div class="form-group">
                             <input type="text" name="name" class="form-control" required="required" placeholder="您的姓名">
                         </div>
@@ -38,7 +40,7 @@
                                       placeholder="您的建议或者疑惑"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" class="btn btn-submit" value="Submit">
+                            <input type="submit" name="submit" class="btn btn-submit" value="Submit" id="submit">
                         </div>
                     </form>
                 </div>
@@ -54,9 +56,4 @@
 </footer>
 
 
-<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="{% static 'js/bootstrap.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/isotope.pkgd.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+
