@@ -8,7 +8,10 @@
 ## 网站截图
 ### 首页
 ![首页](index.png)
-### 在线数据分析
-![](analyse.png)
+
 ### 在线爬虫
 ![](spider.png)
+
+### 数据分析
+![](chart.png)
+![](force.png)
