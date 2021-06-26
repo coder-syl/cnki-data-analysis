@@ -1,0 +1,186 @@
+{% load static %}
+
+{% include "analyse/header.html" %}
+{% include "analyse/importCSS.html" %}
+<style>
+    a {
+        color: black;
+    }
+
+    .padding-top {
+        padding-top: 10px;
+    }
+</style>
+<script type="text/javascript" charset="utf8" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" charset="utf8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.js"></script>
+<div class="container">
+    <div class="col-md-12">
+        <ul id="tab2" class="nav nav-pills">
+            <li class="active"><a href="#tab2-item1" data-toggle="tab">作者关系图</a></li>
+            <li><a href="#tab2-item2" data-toggle="tab">其他信息</a></li>
+
+        </ul>
+        <div class="tab-content" style="padding-top: 50px;padding-bottom: 100px;">
+            <div class="tab-pane fade active in" id="tab2-item1">
+                <div id="main" style="width: 100%;height:400px;"></div>
+            </div>
+            <div class="tab-pane fade" id="tab2-item2">
+                <div id="top_authors" style="width: 100%;">
+                    <section id="blog-details" class="padding-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-7">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="single-blog blog-details two-column">
+
+                                                <div class="post-content overflow">
+                                                    <h2 class="post-title bold"><a
+                                                            href="{{ paper.url }}" target="_blank"
+                                                            style="color:#00aeef;">{{ paper.title }}</a></h2>
+                                                    <h3 class="post-author"><a href="#">{{ paper.public_year }}</a></h3>
+                                                    <h3 class="post-author"><a href="#">{{ paper.source_type }}</a></h3>
+
+                                                    <p>{{ paper.description }}</p>
+                                                    <h3 class="post-author" style="padding-top: 20px;">
+                                                        数据来源知网，点击标题跳转至详细信息</h3>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-5">
+                                    <div class="sidebar blog-sidebar">
+                                        <div class="sidebar-item  categories">
+                                            <h3 style="color:#00aeef;">作者</h3>
+                                            {% for d in  data %}
+{#                                                <div class="media">#}
+                                                    <ul class="nav navbar-stacked">
+                                                        <li>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">{{ d }}</a></li>
+                                                    </ul>
+{#                                                </div>#}
+
+                                            {% endfor %}
+                                        </div>
+                                        <div class="sidebar-item categories">
+                                            <h3 style="color:#00aeef;">基金</h3>
+                                            <ul class="nav navbar-stacked">
+                                                <li><a href="#">{{ paper.fund }}</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="sidebar-item categories">
+                                            <h3 style="color:#00aeef;">关键词</h3>
+                                            <ul class="nav navbar-stacked">
+                                                <li><a href="#">{{ paper.sch_key }}</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var myChart = echarts.init(document.getElementById('main'));
+    var graph = {
+        "nodes": [
+            {% for d in  data %}
+                {
+                    "id": "{{ forloop.counter}}",
+                    "name": "{{d}}",
+                    "symbolSize": 19,
+                    'des': '第' + '{{ forloop.counter}}' + '作者',
+                    "value": 2,
+                    "category": 0
+                },
+            {% endfor%}
+        ],
+        "links": [
+            {% for d in  data %}
+                {% if forloop.counter != 1 %}
+                    {
+                        "id": "0",
+                        category: '合作作者',
+                        "source": "1",
+                        "target": "{{ forloop.counter }}",
+                    },
+                {% endif %}
+            {% endfor%}
+
+        ]
+    }
+
+    option = {
+        tooltip: {},
+        legend: [{
+            data: ['作者关系',]
+        }],
+        animationDuration: 1,
+        animationEasingUpdate: 'quinticInOut',
+        series: [{
+            name: '关系图',
+            type: 'graph',
+            {#layout: 'force',#}
+            layout: 'circular',
+            data: graph.nodes,
+            links: graph.links,
+            categories: [{
+                name: '作者关系'
+            }
+            ],
+            roam: true,
+            focusNodeAdjacency: true,
+            label: {
+                position: 'right',
+                formatter: '{b}',
+                show: true,
+            },
+            lineStyle: {
+                color: '#00aeef',
+                curveness: 0.3
+            },
+            tooltip: {
+                formatter: function (x) {
+                    return x.data.des;
+                }
+            },
+            itemStyle: {
+                color: '#00aeef'               // 关系图节点标记的颜色
+            },
+            emphasis: {
+                lineStyle: {
+                    width: 10
+                }
+            },
+            circular: {
+                edgeLength: 300,
+                gravity: 0.04
+            },
+            edgeLabel: {                // 连接两个关系对象的线上的标签
+                normal: {
+                    show: true,
+                    textStyle: {
+                        fontSize: 12
+                    },
+                    formatter: function (param) {        // 标签内容
+                        return param.data.category;
+                    }
+                }
+            },
+        }]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+</script>
+{% include "analyse/footer.html" %}
+{% include "analyse/importJS.html" %}
