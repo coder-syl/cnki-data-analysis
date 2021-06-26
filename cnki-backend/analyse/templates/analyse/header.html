@@ -1,0 +1,49 @@
+{% load static %}
+
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">-->
+
+
+<header id="header">
+    <div class="navbar navbar-inverse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{% url 'index'%}">
+                    <h1><img src="{% static 'img/logo.png' %}" alt="logo"></h1>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{% url 'index' %}">主页</a></li>
+                    <li><a href="{% url 'paperAnalyse'%}">热门分析</a>
+                    </li>
+                    <!--<li><a href="#">在线查找</a>-->
+
+                    </li>
+                    <li><a href="{% url 'startSpider' %}">在线爬虫</a>
+                    </li>
+                    </li>
+                    <li><a href="{% url 'chart' %}">在线数据分析</a>
+                    </li>
+{#                    <li><a href="{% url 'paperDetail' %}">论文详情</a>#}
+{#                    </li>#}
+                    <!--{% if name %}-->
+                        <!--<li>-->
+                            <!--<a href="#">{{name}}</a>-->
+                        <!--</li>-->
+                    <!--{% else %}-->
+                        <!--<li>-->
+                            <!--<a href="#">登录</a>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                            <!--<a href="#">注册</a>-->
+                        <!--</li>-->
+                    <!--{% endif %}-->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</header>
